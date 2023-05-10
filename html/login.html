@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Аутентификация</title>
+    <style>
+      /* Cyberpunk style CSS */
+      body {
+        background-color: #292929;
+        font-family: 'Arial';
+        color: #ffffff;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      form {
+        margin: 0 auto;
+        width: 300px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #ffffff;
+        color: #ffffff;
+        font-size: 16px;
+        outline: none;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #ff2b2b;
+        border: none;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+      }
+      input[type="submit"]:hover {
+        background-color: #ff5454;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Авторизация</h1>
+    <form action="http://127.0.0.1:3000/login" method="POST">
+      <label>Логин:</label>
+      <input type="text" name="username" required>
+      <label>Пароль:</label>
+      <input type="password" name="password" required>
+      <input type="submit" value="Проверить" align="center">
+    </form>
+  </body>
+</html>
